@@ -8,7 +8,7 @@ const PostFilter = ({filter, setFilter}) => {
 
         <div>
         <MyInput
-          value = {filter.query}
+          value = {filter.queåry}
           onChange = {e=> setFilter({...filter, query: e.target.value})}
           placeholder = "Search..."
         />
