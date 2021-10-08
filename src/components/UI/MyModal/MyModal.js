@@ -6,13 +6,18 @@ const MyModal = ({children, visible, setVisible}) => {
     const rootClasses = [cl.MyModal]
 
     if(visible) {
+
         rootClasses.push(cl.active)
+
     }
 
     return (
         <div className = {rootClasses.join(' ')}>
+
             <div className = {cl.myModalContent}>
+
                 {children}
+                
             </div>
         </div>
     )
